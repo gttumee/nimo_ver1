@@ -5,13 +5,13 @@
 @section('content')
 <header class="header header-mini">
     <div class="col-md-6">
+        <form method="GET" action="{{route('index')}}" accept-charset="UTF-8">
         <div class="input-group">
-            <input type="text" class="form-control" placeholder="Үг хайх">
+            <input type="text" class="form-control" placeholder="Үг хайх" name="name">
             <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                    Хайх<i class="fa fa-search"></i>
-                </button>
+                <input class="btn btn-primary" type="submit" value="Хайх">
             </div>
+        </form>
         </div>
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
